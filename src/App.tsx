@@ -59,6 +59,12 @@ function App() {
     }
   };
 
+  // Show access form if not authorized
+  if (!isAuthorized) {
+    return (
+      <div className="min-h-screen font-['Inter'] flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="flex-1 flex items-center justify-center p-6">
+          <Card className="w-full max-w-md p-8 bg-white/80 backdrop-blur-sm border-0 shadow-xl">
             <div className="text-center space-y-6">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 mb-2">
@@ -184,3 +190,13 @@ function App() {
               rel="noopener noreferrer"
               className="flex items-center justify-center"
             >
+              The Canvas Shirt hos Northern Playground
+            </a>
+          </Button>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+export default App;

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import image1 from '@/assets/images/IMG_6619.jpeg';
-import image2 from '@/assets/images/image2.svg';
+import image2 from '@/assets/images/shirt-1333x2000.jpg';
 
 function App() {
   return (

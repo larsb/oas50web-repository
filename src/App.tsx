@@ -63,7 +63,7 @@ function App() {
               rel="noopener noreferrer"
               className="flex items-center justify-center"
             >
-              Learn More
+              The Canvas Shirt hos Northern Playground
             </a>
           </Button>
         </section>

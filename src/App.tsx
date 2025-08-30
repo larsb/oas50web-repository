@@ -258,10 +258,4 @@ function App() {
   );
 }
 
-export default App;        </section>
-      </div>
-    </div>
-  );
-}
-
 export default App;

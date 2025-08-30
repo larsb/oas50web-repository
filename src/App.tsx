@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import backgroundImage from '@/assets/images/IMG_6619.jpeg';
+import backgroundImage from '@/assets/images/flyfish.gif';
 import image2 from '@/assets/images/shirt-1333x2000.jpg';
 
 function App() {

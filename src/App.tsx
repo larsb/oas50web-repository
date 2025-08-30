@@ -58,7 +58,7 @@ function App() {
             className="w-full h-14 text-lg font-medium bg-white/90 hover:bg-white text-black backdrop-blur-sm border border-white/20"
           >
             <a 
-              href="https://example.com" 
+              href="https://oas50web.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center justify-center"

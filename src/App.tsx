@@ -38,6 +38,16 @@ function App() {
               loading="lazy"
             />
           </Card>
+          
+          {/* Product Description */}
+          <div className="text-center px-2">
+            <p className="text-white/90 text-base leading-relaxed drop-shadow-md">
+              En skjorte i naturlig bomullscanvas føles som deg. Uten parfyme, sminke og plast. Like anvendelig bak barnevogn som bak miksebord. Og skulle det slites et hull så kan alt repareres.
+            </p>
+            <p className="text-white/80 text-sm mt-3 drop-shadow-md">
+              Trykk på linken under for å bestille.
+            </p>
+          </div>
         </section>
 
         {/* Call to Action */}

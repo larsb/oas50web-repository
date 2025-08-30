@@ -59,17 +59,6 @@ function App() {
     }
   };
 
-  // Access code screen
-  if (!isAuthorized) {
-    return (
-      <div 
-        className="min-h-screen font-['Inter'] flex flex-col bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <div className="absolute inset-0 bg-black/60"></div>
-        
-        <div className="relative z-10 flex-1 flex flex-col justify-center max-w-md mx-auto w-full px-6 py-8 gap-8">
-          <Card className="p-6 bg-white/95 backdrop-blur-sm border border-white/20">
             <div className="text-center space-y-6">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 mb-2">
@@ -195,23 +184,3 @@ function App() {
               rel="noopener noreferrer"
               className="flex items-center justify-center"
             >
-              The Canvas Shirt hos Northern Playground
-            </a>
-          </Button>
-
-          {/* Admin reset option (for testing) */}
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setIsAuthorized(false)}
-            className="w-full text-white/60 hover:text-white/80 text-xs"
-          >
-            Logg ut
-          </Button>
-        </section>
-      </div>
-    </div>
-  );
-}
-
-export default App;

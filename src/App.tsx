@@ -42,7 +42,7 @@ function App() {
             Halve livet har du lokket folk ut på dansegulvet,
             og den andre halvdelen har du lokket ørreten opp av elva.
             Må de neste 50 gi like mye rytme, napp og glede –
-            og masse kvalitetstid med familie og venner som heier på deg i elv og på gulv
+            og masse kvalitetstid med familie og venner som heier på deg i elv og på gulv.
           </p>
         </header>
 
@@ -60,7 +60,7 @@ function App() {
           {/* Product Description */}
           <div className="text-center px-2">
             <p className="text-white/90 text-base leading-relaxed drop-shadow-md">
-              En skjorte i naturlig bomullscanvas føles som deg. Uten parfyme, sminke og plast. Like anvendelig bak barnevogn som bak miksebord. Og skulle det slites et hull så kan den repareres.
+              En skjorte i naturlig bomullscanvas føles som deg. Uten parfyme, sminke og plast. Like anvendelig bak barnevogn som bak miksebord. Og skulle det slites et hull så kan det repareres.
             </p>
             <p className="text-white/80 text-sm mt-3 drop-shadow-md">
               Trykk på linken under for å bestille.

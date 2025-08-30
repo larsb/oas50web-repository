@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { QrCode } from "@phosphor-icons/react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 import backgroundImage from '@/assets/images/flyfish.gif';
@@ -11,7 +10,6 @@ import image2 from '@/assets/images/shirt-1333x2000.jpg';
 function App() {
   const [accessCode, setAccessCode] = useState("");
   const [isAuthorized, setIsAuthorized] = useState(false);
-  const [showQR, setShowQR] = useState(false);
   
   const correctAccessCode = "oivind50";
 
@@ -75,25 +73,6 @@ function App() {
                   Fortsett
                 </Button>
               </form>
-
-              <div className="border-t pt-4">
-                <Button
-                  variant="outline"
-                  onClick={() => setShowQR(!showQR)}
-                  className="w-full gap-2"
-                >
-                  <QrCode className="h-4 w-4" />
-                  {showQR ? "Skjul QR-kode" : "Vis QR-kode"}
-                </Button>
-                
-                {showQR && (
-                  <div className="mt-4 text-center">
-                    <p className="text-sm text-gray-500">
-                      QR-kode vil være tilgjengelig snart
-                    </p>
-                  </div>
-                )}
-              </div>
             </div>
           </Card>
         </div>

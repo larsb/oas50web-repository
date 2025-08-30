@@ -5,8 +5,6 @@ import { Label } from "@/components/ui/label";
 import { QrCode } from "@phosphor-icons/react";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
-import { useKV } from '@github/spark/hooks';
-import QRCode from 'qrcode';
 import backgroundImage from '@/assets/images/flyfish.gif';
 import image2 from '@/assets/images/shirt-1333x2000.jpg';
 
@@ -14,30 +12,8 @@ function App() {
   const [accessCode, setAccessCode] = useState("");
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [showQR, setShowQR] = useState(false);
-  const [qrCodeUrl, setQrCodeUrl] = useState("");
   
   const correctAccessCode = "oivind50";
-
-  // Generate QR code on component mount
-  useEffect(() => {
-    const generateQR = async () => {
-      try {
-        const websiteUrl = window.location.origin + window.location.pathname + "?code=" + correctAccessCode;
-        const qrDataUrl = await QRCode.toDataURL(websiteUrl, {
-          width: 256,
-          margin: 2,
-          color: {
-            dark: '#000000',
-            light: '#FFFFFF'
-          }
-        });
-        setQrCodeUrl(qrDataUrl);
-      } catch (err) {
-        console.error('Failed to generate QR code:', err);
-      }
-    };
-    generateQR();
-  }, []);
 
   // Check for access code in URL params
   useEffect(() => {
@@ -110,15 +86,10 @@ function App() {
                   {showQR ? "Skjul QR-kode" : "Vis QR-kode"}
                 </Button>
                 
-                {showQR && qrCodeUrl && (
+                {showQR && (
                   <div className="mt-4 text-center">
-                    <img 
-                      src={qrCodeUrl} 
-                      alt="QR Code til nettsiden" 
-                      className="mx-auto bg-white p-2 rounded"
-                    />
-                    <p className="text-xs text-gray-500 mt-2">
-                      Skann for direkte tilgang
+                    <p className="text-sm text-gray-500">
+                      QR-kode vil være tilgjengelig snart
                     </p>
                   </div>
                 )}

@@ -13,7 +13,7 @@ import image2 from '@/assets/images/shirt-1333x2000.jpg';
 function App() {
   const [copied, setCopied] = useState(false);
   const [accessCode, setAccessCode] = useState("");
-  const [isAuthorized, setIsAuthorized] = useKV("authorized", false);
+  const [isAuthorized, setIsAuthorized] = useState(false);
   const [showQR, setShowQR] = useState(false);
   const [qrCodeUrl, setQrCodeUrl] = useState("");
   
@@ -48,7 +48,7 @@ function App() {
     if (codeFromUrl === correctAccessCode) {
       setIsAuthorized(true);
     }
-  }, [setIsAuthorized]);
+  }, []);
 
   const handleAccessSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -250,7 +250,7 @@ function App() {
             onClick={() => setIsAuthorized(false)}
             className="w-full text-white/60 hover:text-white/80 text-xs"
           >
-            Reset tilgang (for testing)
+            Logg ut
           </Button>
         </section>
       </div>

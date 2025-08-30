@@ -12,7 +12,7 @@ function App() {
         {/* Header Text */}
         <header className="text-center">
           <h1 className="text-3xl font-bold text-foreground leading-tight">
-            Welcome to Our Mobile Site
+            Øivind 50 år
           </h1>
           <p className="text-muted-foreground mt-3 text-lg">
             Discover what we have to offer

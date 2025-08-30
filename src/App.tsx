@@ -20,8 +20,11 @@ function App() {
           <h1 className="text-3xl font-bold text-white leading-tight drop-shadow-lg">
             Øivind 50 år
           </h1>
-          <p className="text-white/90 mt-3 text-lg drop-shadow-md">
-            Discover what we have to offer
+          <p className="text-white/90 mt-3 text-base leading-relaxed drop-shadow-md max-w-sm mx-auto">
+            Halve livet har du lokket folk ut på dansegulvet,
+            og den andre halvdelen har du lokket ørreten opp av elva.
+            Må de neste 50 gi like mye rytme, napp og glede –
+            og masse kvalitetstid med familie og venner som heier på deg i elv og på gulv
           </p>
         </header>
 
